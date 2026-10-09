@@ -1,40 +1,41 @@
 class bankaccount{
     private int accountnumber;
     private String holdername;
-    private double balnce;
+    private double balance;
     
-    void set accountnumber(int accountnumber){
+    void setaccountnumber(int accountnumber){
         this.accountnumber=accountnumber;
     }
-    void set holdername(String holdername){
+    void setholdername(String holdername){
         this.holdername=holdername;
     }
-    void set balance(double balance){
-        if balance >= 0 {
-            this.balnce=balance;
+    void setbalance(double balance){
+        if(balance >= 0) {
+            this.balance=balance;
         }else{
             System.out.println("invalid balance");
         }
     }
-    public class bank{
-        public static void main(String [] args){
-            bankaccount b1=new bankaccount();
-            b1.set accountnumber(12345);
-            System.out.println(b1.get accountnumber());
-        }
-    }
-    int get accountnumber(){
+
+    int getaccountnumber(){
     return accountnumber;
     }
-    String get holdername(){
+    String getholdername(){
         return holdername;
     }
-    double get balance(){
-        return balnce;
+    double getbalance(){
+        return balance;
     }
-    bankaccount b1=new bankaccount();
-    b1.set accountnumber(12345);
-    System.out.println(b1.get accountnumber());
-    b1.accountnumber=12345;
-    
 }
+    public class bank{
+        public static void main(String [] args){
+    bankaccount b1=new bankaccount();
+    b1.setaccountnumber(12345);
+    System.out.println(b1.getaccountnumber());
+    b1.setholdername("John Doe");
+    System.out.println(b1.getholdername());
+    b1.setbalance(1000.50);
+    System.out.println(b1.getbalance());
+}
+}
+
