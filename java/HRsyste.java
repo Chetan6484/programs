@@ -27,7 +27,7 @@ public class HRsyste {
     public static void main(String[] args) {
         HRsystem hr1 = new HRsystem("rahul", 3054, 50000);
         HRsystem hr2 = new HRsystem("abc", 3589, 60000);
-        HRsystem hr3 = new HRsystem("xyz", 4065, 80000);
+        HRsystem hr3 = new HRsystem("xyz", 4065, 0000);
         hr1.display();
         hr2.display();
         hr3.display();
