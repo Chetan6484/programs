@@ -1,7 +1,7 @@
-class student{
+class astudent{
     String name;
     static String college ="flora college";
-    student(String name){
+    astudent(String name){
     this.name=name;
     }
     void show(){
@@ -9,14 +9,14 @@ class student{
         System.out.println("college is:"+college);
     }
 }
-public class static1{
+public class static123{
     public static void main(String []args){
-        student s1=new student("xyz");
-        student s2=new student("abc");
+        astudent s1=new astudent("xyz");
+        astudent s2=new astudent("abc");
         s1.show();
         s2.show();
-        student.college="pqr";
-        System.out.println(student.college);
+        astudent.college="pqr";
+        System.out.println(astudent.college);
         s2.show();
     }
 }
